@@ -80,14 +80,6 @@ After analyzing the text, the application presents the results in a clear and or
     - Handling the response data, usually in HTML format.
     - Utilizing parsing libraries to extract meaningful information from the web data.
 
-## Further Sections
-Following these introductory sections, the notebook delves into more detailed aspects of web scraping and NLP. It includes practical code examples and explanations for each step in the process. The subsequent sections are designed to guide the user through:
-- Extracting specific data from web pages.
-- Cleaning and preparing the data for analysis.
-- Applying NLP techniques to analyze and derive insights from the text data.
-
-This notebook is a comprehensive guide for anyone interested in learning how to combine the power of web scraping and NLP using Python.
-
 ### `aggregated_results.csv`
 - This CSV file is an output from the Jupyter Notebook. It contains aggregated statistical data related to NLP analysis such as sentence counts, word counts, etc., across multiple text sources.
 
