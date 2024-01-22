@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .result-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #e7f3ff;
+            border-left: 5px solid #2196f3;
+            font-size: 1.1rem;
+        }
+        .result-item span {
+            font-weight: bold;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2196f3;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Analysis Results</h2>
+    <div class="result-item">Sentence Count: <span th:text="${sentenceCount}">0</span></div>
+    <div class="result-item">Word Count: <span th:text="${wordCount}">0</span></div>
+    <div class="result-item">Noun Count: <span th:text="${nounCount}">0</span></div>
+    <div class="result-item">Verb Count: <span th:text="${verbCount}">0</span></div>
+    <div class="result-item">Stopword Count: <span th:text="${stopwordCount}">0</span></div>
+    <a href="/" th:href="@{/}">Analyze another text</a>
+</div>
+</body>
+</html>
